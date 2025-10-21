@@ -4,8 +4,6 @@
 }
 
 body {
-  width: 1920px;
-  height: 4480px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -15,21 +13,34 @@ body {
 .header {
   width: 100%;
   height: 44px;
-  background-color: #f5f5f7cc;
-  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 24px;
 }
-.header a {
+.alga_bol > a {
+  display: block;
   font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
   font-style: normal;
   color: #000000;
   text-decoration: none;
+}
+.alga_bol {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.zuraas {
+  display: none;
+}
+.zahiih {
+  display: flex;
+  gap: 24px;
+}
+main {
+  width: 100%;
 }
 .apple_logo {
   width: 12.97px;
@@ -56,9 +67,6 @@ body {
   padding-top: 44px;
 }
 
-.header {
-}
-
 .pro {
   width: 100%;
   height: 692px;
@@ -68,6 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 .pro_deer {
   margin-top: 55px;
@@ -75,6 +84,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 .pro_deer h1 {
   margin: 0px;
@@ -95,7 +105,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 }
 .learn a {
   width: 123px;
@@ -106,11 +116,11 @@ body {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  text-decoration: underline;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration: none;
 }
 .buy a {
   width: 68px;
@@ -121,12 +131,11 @@ body {
   justify-content: center;
   align-items: center;
   color: #2997ff;
-  text-decoration: underline;
-  text-decoration: underline;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration: none;
 }
 
 .iphone16 {
@@ -138,6 +147,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 .learn1 a {
   width: 123px;
@@ -148,8 +158,7 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  text-decoration: underline;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -164,7 +173,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -180,6 +189,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: end;
+  gap: 20px;
+}
+.tablet_gift {
+  display: none;
 }
 .gift_shop a {
   width: 114px;
@@ -190,6 +203,7 @@ body {
   border-radius: 44px;
   color: #ffffff;
   background-color: #0071e3;
+  text-decoration: none;
 }
 .pro_deer1 {
   margin-bottom: 55px;
@@ -197,6 +211,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 .pro_deer1 h1 {
   margin: 0px;
@@ -214,9 +229,6 @@ body {
   color: #000000;
 }
 
-main {
-}
-
 .buteegdehuun {
   width: 100%;
   height: 1764px;
@@ -225,8 +237,12 @@ main {
   justify-content: center;
   gap: 12px;
 }
+.mobile {
+  display: none;
+}
 .buteegdehuun_bagana1 {
   display: flex;
+  width: 50%;
   flex-direction: column;
   gap: 12px;
 }
@@ -236,7 +252,7 @@ main {
   background-position: center;
   display: flex;
   flex-direction: column;
-  width: 942px;
+  width: 100%;
   height: 580px;
   gap: 20px;
 }
@@ -270,7 +286,7 @@ main {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -285,8 +301,7 @@ main {
   justify-content: center;
   align-items: center;
   color: #2997ff;
-  text-decoration: underline;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -300,9 +315,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 942px;
+  width: 100%;
   height: 580px;
   gap: 16px;
+}
+.tablet_zaluu {
+  display: none;
 }
 .buteegdehuun_a1_deer {
   margin-top: 55px;
@@ -354,8 +372,10 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: 942px;
   height: 580px;
+}
+.buteegdehuun_a2_tablet {
+  display: none;
 }
 .buteegdehuun_a3_deer {
   display: flex;
@@ -376,6 +396,7 @@ main {
 }
 .buteegdehuun_bagana2 {
   display: flex;
+  width: 50%;
   flex-direction: column;
   gap: 12px;
 }
@@ -388,8 +409,10 @@ main {
   align-items: center;
   justify-content: end;
   gap: 16px;
-  width: 942px;
   height: 580px;
+}
+.buteegdehuun_b1_tablet {
+  display: none;
 }
 .buteegdehuun_b1_deer {
   margin-top: 55px;
@@ -428,8 +451,10 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 942px;
   height: 580px;
+}
+.buteegdehuun_b2_tablet {
+  display: none;
 }
 .buteegdehuun_b2_deer {
   display: flex;
@@ -460,7 +485,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: 942px;
   height: 580px;
 }
 .buteegdehuun_b3_deer {
@@ -504,40 +528,41 @@ main {
   align-items: center;
   color: #2997ff;
   text-decoration: underline;
-  text-decoration: underline;
   font-size: 16px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
-footer {
+.scroll_1 {
+  display: none;
 }
-
+.scroll_mobile_tseg {
+  display: none;
+}
 .tom_scroll {
   display: flex;
-  /* flex-direction: row; */
-  /* align-items: end; */
   gap: 16px;
   width: 100%;
   height: 668px;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  scroll-snap-align: center;
 }
-.tom {
-  background-image: url(tom.jpg);
-  background-position: center;
-  background-size: cover;
+.tom_scroll > div {
   width: 1250px;
-  height: 100%;
+  height: 668px;
   object-fit: cover;
   object-position: center;
   scroll-snap-align: center;
   flex-shrink: 0;
   display: flex;
   align-items: end;
-  gap: 20px;
+}
+.tom {
+  background-image: url(tom.jpg);
+  background-position: center;
+  background-size: cover;
 }
 .tom_stream {
   width: 133px;
@@ -580,70 +605,35 @@ footer {
   background-image: url(tom1.jpg);
   background-position: center;
   background-size: cover;
-  width: 1250px;
-  height: 668px;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 20px;
 }
 .tom2 {
   background-image: url(tom2.jpg);
   background-position: center;
   background-size: cover;
-  width: 1250px;
-  height: 668px;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 20px;
 }
 .tom3 {
   background-image: url(tom3.jpg);
   background-position: center;
   background-size: cover;
-  width: 1250px;
-  height: 668px;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 20px;
 }
 .tom4 {
   background-image: url(instigators.jpg);
   background-position: center;
   background-size: cover;
-  width: 1250px;
-  height: 668px;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 20px;
 }
 .tom5 {
   background-image: url(baseball.jpg);
   background-position: center;
   background-size: cover;
-  width: 1250px;
-  height: 668px;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 5px;
 }
 .tom5_dardag {
@@ -665,85 +655,42 @@ footer {
 .tom6 {
   background-image: url(k-pop-idols.jpg);
   background-position: center;
-  background-size: cover;
-  width: 1250px;
-  height: 668px;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 20px;
 }
 .tom7 {
   background-image: url(lady-in-the-lake.jpg);
   background-position: center;
   background-size: cover;
-  width: 1250px;
-  height: 668px;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 20px;
 }
 .tom8 {
   background-image: url(morning-show.jpg);
   background-position: center;
   background-size: cover;
-  width: 1250px;
-  height: 668px;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 20px;
 }
 .tom9 {
   background-image: url(pachinko.jpg);
   background-position: center;
   background-size: cover;
-  width: 1250px;
-  height: 668px;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 20px;
 }
 .tom10 {
   background-image: url(pressumed-innocent.jpg);
   background-position: center;
   background-size: cover;
-  width: 1250px;
-  height: 668px;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 20px;
 }
 .tom11 {
   background-image: url(season-pass.jpg);
   background-position: center;
   background-size: cover;
-  width: 1250px;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  scroll-snap-align: center;
-  flex-shrink: 0;
   display: flex;
-  align-items: end;
   gap: 20px;
 }
 .scroll {
@@ -758,8 +705,1454 @@ footer {
   background-color: black;
   border-radius: 50%;
 }
-@media only screen and (max-width: 1023px) and (min-width: 768px) {
+.ursdag {
+  width: 100%;
+  height: 236px;
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-snap-align: center;
+  gap: 10px;
+}
+.ursdag::-webkit-scrollbar {
+  display: none;
+}
+.group {
+  animation: spin 10s infinite linear;
+  animation-duration: 3s;
+}
+.group div {
+  width: 417px;
+  flex: 0 0 417px;
+  height: 236px;
+  transition: 150ms;
+}
+.ursdag1 {
+  background-image: url(ursdag1.jpg);
+  height: 236px;
+  width: 417px;
+}
+.ursdag2 {
+  background-image: url(ursdag2.jpg);
+  height: 236px;
+  width: 417px;
+}
+.ursdag3 {
+  background-image: url(ursdag3.jpg);
+  height: 236px;
+  width: 417px;
+}
+.ursdag4 {
+  background-image: url(ur.jpg);
+  height: 236px;
+  width: 417px;
+}
+.ursdag5 {
+  background-image: url(ursdag1.jpg);
+  height: 236px;
+  width: 417px;
+}
+.ursdag6 {
+  background-image: url(ursdag2.jpg);
+  height: 236px;
+  width: 417px;
+}
+@keyframes spin {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: -100%;
+  }
+}
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
   body {
-    width: 768px;
+    width: 100%;
+    height: 4272px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .header {
+    width: 100%;
+    height: 44px;
+    background-color: #f5f5f7cc;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .alga_bol {
+    display: none;
+  }
+  .apple_logo {
+    width: 12.97px;
+    height: 15.94px;
+    text-decoration: none;
+    margin-left: 17px;
+  }
+  .hailt {
+    width: 14.08px;
+    height: 14.08px;
+    text-decoration: none;
+  }
+  .sags {
+    width: 12.94px;
+    height: 14.91px;
+    text-decoration: none;
+  }
+  .zuraas {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+  .fund {
+    width: 328px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .zahiih {
+    display: flex;
+    text-decoration: none;
+    gap: 15px;
+    margin-right: 17px;
+  }
+
+  .pro {
+    width: 100%;
+    height: 650px;
+    background-image: url(pro.jpg);
+    background: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .pro_deer {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .pro_deer h1 {
+    margin: 0px;
+    font-size: 42px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color: #f5f5f7;
+  }
+  .pro_deer h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: #f5f5f7;
+  }
+  .pro_dotor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .learn a {
+    width: 123px;
+    height: 44px;
+    background-color: #0071e3;
+    border-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+  }
+  .buy a {
+    width: 68px;
+    height: 44px;
+    border: solid 1px #2997ff;
+    border-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2997ff;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  .iphone16 {
+    width: 100%;
+    height: 650px;
+    background-image: url(intelligence.jpg);
+    background: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .learn1 a {
+    width: 123px;
+    height: 44px;
+    background-color: #ffffff;
+    border-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .buy1 a {
+    width: 68px;
+    height: 44px;
+    border: solid 1px #ffffff;
+    border-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .gift {
+    width: 100%;
+    height: 650px;
+    background-image: url(buteegdehuun_a1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+  }
+  .tablet_gift {
+    display: block;
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .gift_shop a {
+    width: 114px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 44px;
+    color: #ffffff;
+    background-color: #0071e3;
+    text-decoration: none;
+  }
+  .pro_deer1 {
+    display: none;
+  }
+  .pro_deer1 h1 {
+    margin: 0px;
+    font-size: 42px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color: #000000;
+  }
+  .pro_deer1 h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+  }
+
+  .buteegdehuun {
+    width: 100%;
+    height: 1492px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+  .scroll_mobile {
+    display: none;
+  }
+  .buteegdehuun_bagana1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .buteegdehuun_a1 {
+    background-image: url(zaluu.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 490px;
+    gap: 20px;
+    text-align: center;
+  }
+  .tablet_zaluu {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .buteegdehuun_a1_1920px {
+    display: none;
+  }
+  .buteegdehuun_a1_deer {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+  }
+  .buteegdehuun_a1_deer h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+  }
+  .buteegdehuun_a1_dotor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .buteegdehuun_learn {
+    width: 115px;
+    height: 40px;
+    background-color: #0071e3;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .buteegdehuun_buy {
+    width: 68px;
+    height: 40px;
+    border: solid 1px #2997ff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2997ff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .buteegdehuun_a2 {
+    background-image: url(buteegdehuun_b2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+  }
+  .buteegdehuun_a2_1920 {
+    display: none;
+  }
+  .buteegdehuun_a2_tablet {
+    display: block;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .buteegdehuun_a1_deer {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .buteegdehuun_a2_garchig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .buteegdehuun_a2_ner {
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    display: flex;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+  }
+  .buteegdehuun_a2_garchig h2 {
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+  }
+  .buteegdehuun_a2_ner img {
+    width: 26.35px;
+    height: 32px;
+  }
+  .buteegdehuun_a2_deer p {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+  }
+  .buteegdehuun_a3 {
+    background-image: url(buteegdehuun_a3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 490px;
+  }
+  .buteegdehuun_a3_deer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 58px;
+  }
+  .buteegdehuun_a3_deer_bichver {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .buteegdehuun_bagana2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .buteegdehuun_b1 {
+    background-image: url(tablet_b1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 490px;
+  }
+  .buteegdehuun_b1_tablet {
+    display: block;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .buteegdehuun_b1_1920 {
+    display: none;
+  }
+  .buteegdehuun_b1_deer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .buteegdehuun_b1_ner {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color: #f5f5f7;
+  }
+  .buteegdehuun_b1_deer p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #f5f5f7;
+  }
+  .buteegdehuun_b1_dotor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 55px;
+  }
+  .buteegdehuun_b2 {
+    background-image: url(buteegdehuun_b2_tablet.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+  }
+  .buteegdehuun_b2_1920 {
+    display: none;
+  }
+  .buteegdehuun_b2_tablet {
+    display: block;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+  }
+
+  .buteegdehuun_b2_deer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 48px;
+  }
+  .buteegdehuun_b2_ner {
+    font-size: 36px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color: #1d1d1f;
+  }
+  .buteegdehuun_b2_deer p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+  }
+
+  .buteegdehuun_b3 {
+    background-image: url(buteegdehuun_b3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 490px;
+  }
+  .buteegdehuun_b3_deer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 58px;
+  }
+  .buteegdehuun_b3_ner {
+    font-size: 32px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    display: flex;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+  }
+  .buteegdehuun_b3_ner img {
+    width: 26.35px;
+    height: 32px;
+  }
+  .buteegdehuun_b3_bichver {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .buteegdehuun_buy1 {
+    width: 112px;
+    height: 40px;
+    border: solid 1px #2997ff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2997ff;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .tom_scroll {
+    display: flex;
+    gap: 16px;
+    width: 100vw;
+    height: 368px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .tom_scroll > div {
+    width: 689px;
+    height: 368px;
+    object-fit: cover;
+    object-position: center;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    display: flex;
+    align-items: end;
+  }
+  .tom {
+    background-image: url(tom.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .tom_stream {
+    width: 133px;
+    height: 44px;
+    border-radius: 40px;
+    background-color: #f5f5f7;
+    font-family: "Inter";
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-bottom: 58px;
+  }
+  .tom_bichver {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 58px;
+  }
+  .tom_bichver h3 {
+    font-family: "Inter";
+    font-size: 17px;
+    font-weight: 700;
+    font-style: bold;
+    color: #f5f5f7;
+  }
+  .tom_bichver p {
+    font-family: "Inter";
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    color: #f5f5f7;
+  }
+  .tom1 {
+    background-image: url(tom1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .tom2 {
+    background-image: url(tom2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .tom3 {
+    background-image: url(tom3.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .tom4 {
+    background-image: url(instigators.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .tom5 {
+    background-image: url(baseball.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 5px;
+  }
+  .tom5_dardag {
+    width: 113px;
+    height: 20px;
+    background-color: #f5f5f7;
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+    margin-bottom: 69px;
+  }
+  .tom6 {
+    background-image: url(k-pop-idols.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .tom7 {
+    background-image: url(lady-in-the-lake.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .tom8 {
+    background-image: url(morning-show.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .tom9 {
+    background-image: url(pachinko.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .tom10 {
+    background-image: url(pressumed-innocent.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .tom11 {
+    background-image: url(season-pass.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    gap: 20px;
+  }
+  .scroll {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+  }
+  .a {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .scroll_1 {
+    display: none;
+  }
+  .scroll_mobile_tseg {
+    display: none;
+  }
+  .ursdag_mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    height: 5524px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .header {
+    width: 100%;
+    height: 44px;
+    background-color: #f5f5f7cc;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .alga_bol {
+    display: none;
+  }
+  .apple_logo {
+    width: 12.97px;
+    height: 15.94px;
+    text-decoration: none;
+    margin-left: 17px;
+  }
+  .hailt {
+    width: 14.08px;
+    height: 14.08px;
+    text-decoration: none;
+  }
+  .sags {
+    width: 12.94px;
+    height: 14.91px;
+    text-decoration: none;
+  }
+  .zuraas {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+  .fund {
+    width: 328px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .zahiih {
+    display: flex;
+    text-decoration: none;
+    gap: 15px;
+    margin-right: 17px;
+  }
+  .pro {
+    width: 100%;
+    height: 500px;
+    background-image: url(mobile_16.jpg);
+    background: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+  }
+  .pro_deer {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .pro_deer h1 {
+    margin: 0px;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color: #f5f5f7;
+  }
+  .pro_deer h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #f5f5f7;
+  }
+  .pro_dotor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 36px;
+  }
+  .learn a {
+    width: 107px;
+    height: 36px;
+    background-color: #0071e3;
+    border-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+  }
+  .buy a {
+    width: 66px;
+    height: 36px;
+    border: solid 1px #2997ff;
+    border-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2997ff;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+  }
+  .iphone16 {
+    width: 100%;
+    height: 500px;
+    background-image: url(mobile_pro.jpg);
+    background: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+  }
+  .learn1 a {
+    width: 107px;
+    height: 36px;
+    background-color: #ffffff;
+    border-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .buy1 a {
+    width: 66px;
+    height: 36px;
+    border: solid 1px #ffffff;
+    border-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .gift {
+    width: 100%;
+    height: 500px;
+    background-image: url(buteegdehuun_a1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .tablet_gift {
+    display: block;
+    margin-bottom: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  .gift_shop a {
+    width: 107px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 44px;
+    color: #ffffff;
+    background-color: #0071e3;
+    text-decoration: none;
+  }
+  .pro_deer1 {
+    display: none;
+  }
+  .pro_deer1 h1 {
+    margin: 0px;
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color: #000000;
+  }
+  .pro_deer1 h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+  }
+
+  .buteegdehuun {
+    width: 100%;
+    height: 3833px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .mobile {
+    width: 100%;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .buteegdehuun_bagana1 {
+    display: none;
+  }
+  .buteegdehuun_a1 {
+    background-image: url(mobile_zaluu.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 490px;
+    gap: 20px;
+    text-align: center;
+  }
+  .tablet_zaluu {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .buteegdehuun_a1_1920px {
+    display: none;
+  }
+  .buteegdehuun_a1_deer {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+  }
+  .buteegdehuun_a1_deer h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+  }
+  .buteegdehuun_a1_dotor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .buteegdehuun_learn {
+    width: 115px;
+    height: 40px;
+    background-color: #0071e3;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .buteegdehuun_buy {
+    width: 66px;
+    height: 36px;
+    border: solid 1px #2997ff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2997ff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .buteegdehuun_a2 {
+    background-image: url(buteegdehuun_b2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+  }
+  .buteegdehuun_a2_1920 {
+    display: none;
+  }
+  .buteegdehuun_a2_tablet {
+    display: block;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .buteegdehuun_a1_deer {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .buteegdehuun_a2_garchig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+  .buteegdehuun_a2_ner {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    display: flex;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+  }
+  .buteegdehuun_a2_garchig h2 {
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+  }
+  .buteegdehuun_a2_ner img {
+    width: 26.35px;
+    height: 32px;
+  }
+  .buteegdehuun_a2_deer p {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+  }
+  .buteegdehuun_a3 {
+    background-image: url(buteegdehuun_a3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 490px;
+  }
+  .buteegdehuun_a3_deer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 58px;
+  }
+  .buteegdehuun_a3_deer_bichver {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .buteegdehuun_bagana2 {
+    display: none;
+  }
+  .buteegdehuun_b1 {
+    background-image: url(tablet_b1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 490px;
+  }
+  .buteegdehuun_b1_tablet {
+    display: block;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .buteegdehuun_b1_1920 {
+    display: none;
+  }
+  .buteegdehuun_b1_deer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .buteegdehuun_b1_ner {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color: #f5f5f7;
+  }
+  .buteegdehuun_b1_deer p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #f5f5f7;
+  }
+  .buteegdehuun_b1_dotor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 55px;
+  }
+  .buteegdehuun_b2 {
+    background-image: url(buteegdehuun_b2_tablet.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 490px;
+  }
+  .buteegdehuun_b2_1920 {
+    display: none;
+  }
+  .buteegdehuun_b2_tablet {
+    display: block;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+  }
+
+  .buteegdehuun_b2_deer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 48px;
+  }
+  .buteegdehuun_b2_ner {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color: #1d1d1f;
+  }
+  .buteegdehuun_b2_deer p {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+  }
+
+  .buteegdehuun_b3 {
+    background-image: url(buteegdehuun_b3.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    height: 490px;
+  }
+  .buteegdehuun_b3_deer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 58px;
+  }
+  .buteegdehuun_b3_ner {
+    font-size: 30px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    display: flex;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+  }
+  .buteegdehuun_b3_ner img {
+    width: 26.35px;
+    height: 32px;
+  }
+  .buteegdehuun_b3_bichver {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #1d1d1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  .buteegdehuun_buy1 {
+    width: 107px;
+    height: 36px;
+    border: solid 1px #2997ff;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2997ff;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .tom_scroll {
+    display: none;
+  }
+  .scroll_mobile {
+    display: block;
+    display: flex;
+    gap: 16px;
+    width: 100vw;
+    height: 495px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .scroll_mobile > div {
+    width: 274px;
+    height: 495px;
+    object-fit: cover;
+    object-position: center;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    display: flex;
+    align-items: end;
+  }
+  .scroll_tablet {
+    display: none;
+  }
+  .tom {
+    background-image: url(mobile_scroll1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tom1 {
+    background-image: url(mobile_scroll2.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tom2 {
+    background-image: url(mobile_scroll3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tom3 {
+    background-image: url(mobile_scroll4.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tom4 {
+    background-image: url(mobile_scroll5.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tom5 {
+    background-image: url(mobile_scroll6.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .tom6 {
+    background-image: url(mobile_scroll7.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .scroll_mobile_tseg {
+    display: block;
+    display: flex;
+    width: 100%;
+    height: 8px;
+    justify-content: center;
+    gap: 10px;
+  }
+  .scroll {
+    display: none;
+  }
+  .a {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+  }
+  .ursdag {
+    display: none;
+  }
+  .ursdag_mobile {
+    width: 100%;
+    height: 236px;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+  .group {
+    animation: spin 5s infinite linear;
+    animation-duration: 3s;
+  }
+  .group div {
+    width: 417px;
+    flex: 0 0 417px;
+    height: 236px;
+    background-color: #0071e3;
+    transition: 150ms;
   }
 }
